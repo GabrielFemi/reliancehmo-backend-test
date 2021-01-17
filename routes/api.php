@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\HttpFoundation\Response;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::fallback(function (){
-    return response()->json(['message' => 'Resource Not Found.'], 404);
+    return response()->json(['message' => 'Resource Not Found.'], Response::HTTP_NOT_FOUND);
 });
