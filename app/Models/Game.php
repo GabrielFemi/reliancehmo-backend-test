@@ -9,4 +9,7 @@ class Game extends Model
 {
     public const CREATED_AT = 'date_added';
     use HasFactory;
+    protected $fillable = [
+        'date_added',
+    ];
 }
