@@ -14,7 +14,7 @@ class GameResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'version' => $this->version,
-            'date_added' => $this->date_added
+            'date_added' => $this->date_added->toDateString()
         ];
     }
 }
