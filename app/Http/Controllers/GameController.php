@@ -12,6 +12,6 @@ class GameController extends Controller
 {
     public function index()
     {
-        return Game::all();
+        return GameResource::collection(Game::all());
     }
 }
