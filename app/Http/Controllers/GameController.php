@@ -12,6 +12,6 @@ class GameController extends Controller
 {
     public function index()
     {
-        return new GameResource(Game::all()->response()->setStatusCode(Response::HTTP_FOUND));
+        return Game::all();
     }
 }
