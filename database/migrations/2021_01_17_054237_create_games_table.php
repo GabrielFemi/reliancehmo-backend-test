@@ -18,7 +18,7 @@ class CreateGamesTable extends Migration
             $table->string('name');
             $table->string('version');
             $table->timestamp('date_added');
-            $table->timestamps();
+            $table->timestamp('updated_at');
         });
     }
 
