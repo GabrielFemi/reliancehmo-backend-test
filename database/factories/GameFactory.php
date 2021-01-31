@@ -28,6 +28,7 @@ class GameFactory extends Factory
         return [
             'name' => $game,
             'version' => 'Test version ' . \Faker\Factory::create()->randomFloat(1, 1.0, 4.0),
+            'date_added' => now(),
         ];
     }
 }
