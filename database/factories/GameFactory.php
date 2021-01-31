@@ -26,7 +26,7 @@ class GameFactory extends Factory
         $game = Arr::random($namesOfgames);
         return [
             'name' => $game,
-            'version' => pickVersion($game),
+            'version' => 'Test version',
         ];
     }
 }
