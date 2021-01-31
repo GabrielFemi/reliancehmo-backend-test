@@ -27,7 +27,7 @@ class GameFactory extends Factory
         $game = Arr::random($namesOfgames);
         return [
             'name' => $game,
-            'version' => 'Test version',
+            'version' => 'Test version' . \Faker\Factory::create()->randomFloat(1, 1.0, 4.0),
         ];
     }
 }
